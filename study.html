@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT Study Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(120deg, #d4aad1, #e9d042);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .college-header {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.3);
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+    .hero-section {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      flex: 1 1 auto;
+      text-align: center;
+    }
+    .btn-warning {
+      background: #f39c12;
+    }
+    .btn-danger {
+      background: #e74c3c;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+    .section {
+      padding: 30px 15px;
+      text-align: center;
+    }
+    .about-content, .contact-wrapper {
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+    }
+    .about-content ul {
+      list-style: none;
+      padding: 0;
+    }
+    .about-content ul li::before {
+      content: "✔ ";
+      color: #2ecc71;
+    }
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .contact-left, .contact-right {
+      flex: 1;
+      min-width: 280px;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .whatsapp-btn, .feedback-send-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+    }
+    .whatsapp-btn:hover, .feedback-send-btn:hover {
+      background: #1ebe5a;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+    }
+    .footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: rgba(0,0,0,0.2);
+      font-size: 0.9rem;
+    }
+    .credits {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: #f0e68c;
+    }
+    @media(max-width:768px) {
+      h1 { font-size: 1.6rem; }
+      .hero-container { padding: 20px; }
+      .college-header { font-size: 1.4rem; padding: 10px; }
+    }
+    @media(max-width:480px) {
+      h1 { font-size: 1.4rem; }
+      .btn { font-size: 0.9rem; padding: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- College Header -->
+  <div class="college-header">C. ABDUL HAKEEM COLLEGE OF ENGINEERING AND TECHNOLOGY</div>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-container">
+      <h1><i class="fas fa-laptop-code me-3"></i>Welcome to the IT Study Portal</h1>
+      <p class="lead">Your one-stop destination for academic resources.</p>
+      <div class="btn-group">
+        <a href="login.html" class="btn btn-warning"><i class="fas fa-user-graduate me-2"></i>Student access</a>
+        <a href="admin/admin_login.html" class="btn btn-danger"><i class="fas fa-user-shield me-2"></i>Admin access</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h2><i class="fas fa-info-circle"></i> About IT Study Portal</h2>
+    <div class="about-content">
+      <p>
+        The <strong style="color:#928190;">IT Study Portal</strong> is your digital companion for academic success in information technology. From <span>notes</span> to <span>videos</span>, everything is just a click away.
+      </p>
+      <h3 style="color:#ffffff;"><i class="fas fa-bullseye"></i> Our Motive</h3>
+      <p>Our mission is to empower Anna University's tech students by providing a centralized online platform for sharing and accessing subject notes and academic resources. </p>
+      <h3><i class="fas fa-star"></i> Key Features</h3>
+      <ul>
+        <li>Download organized notes for semester</li>
+        <li>Practice using previous year question papers</li>
+        <li>Request topics or custom uploads</li>
+        <li>Dedicated admin panel for management</li>
+      </ul>
+      <h3><i class="fas fa-users"></i> Who Can Use It ?</h3>
+      <p>This is an online platform for university students of tech to share and access subject notes, study materials, and other resources. Students can collaborate, get support, and improve their academic performance by using a centralized hub for all their course-related content.</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section" id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-left">
+        <h2>🤝 <span style="color:#1d4ed8;">Let's Connect</span></h2>
+        <p>Have questions or feedback? Connect with us or drop a message via WhatsApp!</p>
+        <a href="https://wa.me/919345005902" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+      </div>
+      <div class="contact-right">
+        <h2>📢 <span style="color:#1d4ed8;">Share Your Feedback</span></h2>
+        <form id="feedbackForm" onsubmit="sendFeedback(event)">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" rows="4" placeholder="Your Message..." required></textarea>
+          <button type="submit" class="feedback-send-btn">Send via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; <span id="year"></span> IT Study Portal. Built with ❤️ for Students.
+    <div class="credits">BY : GOKUL S  - 2nd Year IT "A" , CAHCET</div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function sendFeedback(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const url = `https://wa.me/919345005902?text=Feedback%20from%20${name}%20(${email}):%20${message}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
